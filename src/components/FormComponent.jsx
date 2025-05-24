@@ -15,6 +15,13 @@ const handleSubmit = (event) => {
     console.log(username,email,password)
 }
 
+//uso del use ref
+const focusRef = userRef()
+
+useEffect(() => {
+  focusRef.current.focus()
+}, [])
+
 
   return (
     <>
@@ -22,6 +29,7 @@ const handleSubmit = (event) => {
         <div className="mb-3">
             <label htmlFor="username" className="form-label" aria-placeholder="Por favor ingrese su username"> Username </label>
             <input
+                ref={focusRef}
                 type="text" 
                 className="form-control" 
                 id="username" 
