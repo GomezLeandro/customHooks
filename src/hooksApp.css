@@ -1,0 +1,15 @@
+
+.vertical-align{
+   display: flex;
+   flex-direction: column;
+   height: 90vh;
+   justify-content: center;
+}
+.counter{ 
+    color: rgba(245, 3, 3, 0.612);   
+}
+
+.center{
+    display:flex;
+    justify-content: center;
+}
